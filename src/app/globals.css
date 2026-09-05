@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f2f4f7;
+  --foreground: #1b2430;
+  --paper: #ffffff;
+  --ink: #1b2430;
+  --teal: #1e3a5f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-teal-700: #1e3a5f;
+  --color-teal-800: #162c48;
+  --color-teal-900: #0f2036;
+}
+
+body {
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, #d8dee8 0%, transparent 55%),
+    radial-gradient(ellipse 60% 40% at 100% 0%, #e6eaf0 0%, transparent 50%),
+    linear-gradient(180deg, #f2f4f7 0%, #e8ecf1 100%);
+}
+
+.font-display {
+  font-family: var(--font-source-serif), "Source Serif 4", Georgia, serif;
+}
